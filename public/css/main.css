@@ -157,6 +157,91 @@ input[type='email'] {
   margin-top: 23px;
 }
 
+/* style products */
+.products {
+  margin-top: 80px;
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+.card-grid {
+  /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* gap: 37px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+  text-align: center;
+  justify-content: space-between;
+  grid-auto-flow: row;
+}
+
+.card {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.card .card-img {
+  width: 200px;
+  height: 150px;
+  margin-bottom: 14px;
+  border: 1px solid #707070;
+}
+
+.card .card-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
+
+.card .card-img {
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-bottom: 14px;
+}
+
+.card .product-name {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #888;
+}
+
+.card .product-description {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #888;
+}
+
+.card .product-original-price {
+  text-align: left;
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #888;
+}
+
+.card .product-discount-price {
+  text-align: left;
+  margin-bottom: 7px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #888;
+}
+
+.card .product-parcel-price {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #888;
+}
+
 /* style invite */
 .invite {
   display: flex;
