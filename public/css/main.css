@@ -368,6 +368,8 @@ input[type='email'] {
 }
 
 /* Style to responsiveness */
+
+/* style to mobile(smartphones) */
 @media (max-width: 600px) and (min-width: 375px) {
   .header-content {
     padding: 0 10px 0 10px;
@@ -398,7 +400,6 @@ input[type='email'] {
 
   .main-description-form {
     flex-direction: column;
-    /* padding: 0 10px 0 10px; */
   }
 
   .main-description-form h2 {
@@ -480,5 +481,97 @@ input[type='email'] {
 
   .btn-arrow {
     display: inline-block;
+  }
+}
+
+/* style to mobile(tablets) */
+@media (max-width: 768px) and (min-width: 601px) {
+  .header-content {
+    padding: 0 10px 0 10px;
+  }
+
+  .header-content h1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .header-content p {
+    text-align: left;
+    margin-top: 9px;
+    font-weight: 200;
+  }
+
+  .header-content .btn {
+    width: 140px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .navbar ul li > * {
+    margin: 0 0 20px 0;
+  }
+
+  .description {
+    flex: 1;
+    max-width: 520px;
+    margin-right: 60px;
+  }
+
+  .card {
+    width: 100%;
+    height: 130px;
+    text-align: left;
+    margin: 10px;
+  }
+
+  .card .card-img {
+    text-align: center;
+    margin: 0;
+    width: 165px;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  .card .card-img > img {
+    height: 100%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card .product-name {
+    margin-top: 0;
+  }
+
+  .card .product-description {
+    display: none;
+  }
+
+  .card .product-info .btn {
+    width: 165px;
+  }
+
+  .products .btn-lg {
+    width: 50%;
+    min-width: 250px;
+  }
+
+  .invite-content .btn-lg {
+    width: 60%;
+  }
+
+  .invite-form-fields {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .invite-form-fields .form-group {
+    width: 100%;
   }
 }
