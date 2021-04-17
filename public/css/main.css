@@ -40,6 +40,7 @@ body {
 
 .header-content {
   margin-top: 50px;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -183,6 +184,26 @@ input[type='email'] {
 .invite-form-fields .form-group {
   flex: 1;
   max-width: 340px;
+}
+
+/* style footer */
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 290px;
+  background: #707070;
+  clip-path: polygon(0 33%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.main-footer .footer-content {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 100;
+  line-height: 2rem;
 }
 
 /* in common styles */
