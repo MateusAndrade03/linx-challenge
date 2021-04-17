@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/public/css/main.css" />
     <title>Linx Challenge</title>
   </head>
@@ -22,17 +26,22 @@
           <nav class="navbar">
             <ul>
               <li><a class="btn" href="#">Conheça a Linx</a></li>
-              <li><a class="btn" href="#">Ajude o algorítmo</a></li>
-              <li><a class="btn" href="#">Seus produtos</a></li>
-              <li><a class="btn" href="#">Compartilhe</a></li>
+              <li>
+                <a class="btn" href="#main-description-form"
+                  >Ajude o algorítmo</a
+                >
+              </li>
+              <li><a class="btn" href="#products">Seus produtos</a></li>
+              <li><a class="btn" href="#invite">Compartilhe</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <main>
-        <section class="main-description-form">
+        <section class="main-description-form" id="main-description-form">
           <section class="main-description">
             <h2>Ajude o algorítimo a ser mais certeiro</h2>
+            <span class="material-icons-outlined btn-arrow"> expand_less </span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque ultricies tellus nec mi porta convallis sollicitudin
@@ -96,25 +105,27 @@
             value="Ainda mais produtos aqui!"
           />
         </section>
-        <section class="invite">
+        <section class="invite" id="invite">
           <h2 class="h2-line">Compartilhe a novidade</h2>
-          <p>
-            Quer que seus amigos também ganhem a lista personalizada deles?
-            Preencha agora!
-          </p>
-          <form class="invite-form">
-            <div class="invite-form-fields">
-              <div class="form-group">
-                <label>Nome do seu amigo:</label>
-                <input type="text" class="invite-name" />
+          <div class="invite-content">
+            <p>
+              Quer que seus amigos também ganhem a lista personalizada deles?
+              Preencha agora!
+            </p>
+            <form class="invite-form">
+              <div class="invite-form-fields">
+                <div class="form-group">
+                  <label>Nome do seu amigo:</label>
+                  <input type="text" class="invite-name" />
+                </div>
+                <div class="form-group">
+                  <label>E-mail:</label>
+                  <input type="email" class="invite-email" />
+                </div>
               </div>
-              <div class="form-group">
-                <label>E-mail:</label>
-                <input type="email" class="invite-email" />
-              </div>
-            </div>
-            <input class="btn btn-lg" type="submit" value="Enviar agora" />
-          </form>
+              <input class="btn btn-lg" type="submit" value="Enviar agora" />
+            </form>
+          </div>
         </section>
       </main>
       <footer class="main-footer">

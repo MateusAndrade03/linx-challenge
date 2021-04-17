@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -341,4 +342,131 @@ input[type='email'] {
 .btn-lg {
   width: 360px;
   height: 40px;
+}
+/* icon */
+.btn-arrow {
+  display: none;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-size: 3rem;
+  color: #707070;
+}
+
+/* Style to responsiveness */
+@media (max-width: 600px) and (min-width: 375px) {
+  .header-content {
+    padding: 0 10px 0 10px;
+  }
+
+  .header-content h1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .header-content p {
+    text-align: left;
+    margin-top: 9px;
+    font-weight: 200;
+  }
+
+  .header-content .btn {
+    width: 140px;
+  }
+  .navbar {
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .navbar ul li > * {
+    margin: 0 0 20px 0;
+  }
+
+  .main-description-form {
+    flex-direction: column;
+    /* padding: 0 10px 0 10px; */
+  }
+
+  .main-description-form h2 {
+    display: inline-block;
+  }
+
+  .main-description {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .main-form {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: 130px;
+    text-align: left;
+    margin: 10px;
+  }
+
+  .card .card-img {
+    text-align: center;
+    margin: 0;
+    width: 165px;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  .card .card-img > img {
+    height: 100%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card .product-name {
+    margin-top: 0;
+  }
+
+  .card .product-description {
+    display: none;
+  }
+
+  .card .product-info .btn {
+    width: 165px;
+  }
+
+  .products .btn-lg {
+    width: 50%;
+    min-width: 250px;
+  }
+
+  .invite-content {
+    margin: auto;
+    max-width: 340px;
+  }
+
+  .invite-content .btn-lg {
+    width: 60%;
+  }
+
+  .invite-form-fields {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .invite-form-fields .form-group {
+    width: 100%;
+  }
+
+  .main-footer {
+    height: 160px;
+  }
+
+  .btn-arrow {
+    display: inline-block;
+  }
 }
