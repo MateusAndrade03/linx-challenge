@@ -13,3 +13,51 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+  margin: auto;
+  max-width: 1500px;
+}
+
+.main-header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 400px;
+}
+
+.main-header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #707070;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+}
+
+.header-content {
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header-content span {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.header-content p {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
