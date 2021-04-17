@@ -156,7 +156,66 @@ input[type='email'] {
   margin-top: 23px;
 }
 
+/* style invite */
+.invite {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.invite p {
+  font-size: 1.4rem;
+  color: #888;
+  margin-bottom: 60px;
+}
+
+.invite-form-fields {
+  margin: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  max-width: 720px;
+}
+
+.invite-form-fields .form-group {
+  flex: 1;
+  max-width: 340px;
+}
+
 /* in common styles */
+
+/* --------- h2 ------- style h2 line */
+.h2-line {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.h2-line:before {
+  content: '';
+  border-top: 1px solid #888;
+  flex: 1 0 20px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+.h2-line:after {
+  content: '';
+  border-top: 1px solid #888;
+  flex: 1 0 20px;
+  margin-right: -10px;
+  margin-left: 20px;
+}
+
+/* style buttons */
 .btn {
   display: inline-block;
   background: #ffffff;

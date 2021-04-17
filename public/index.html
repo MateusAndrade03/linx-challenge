@@ -86,20 +86,22 @@
             </form>
           </section>
         </section>
-        <section class="products">
-          <h2>Sua seleção especial</h2>
-          <div class="card">
-            <div class="card-img"><img /></div>
-            <div class="product-info">
-              <h4 class="product-name">Nome do produto</h4>
-              <p class="product-description">
-                Descrição do produto um pouco maior, com duas linhas ou três que
-                explica melhor do que se trata.
-              </p>
-              <div class="product-original-price">De: R$23,99</div>
-              <div class="product-discount-price">Por: R$19,99</div>
-              <div class="product-parcel-price">ou 2x de R$9,99</div>
-              <input class="btn" type="submit" value="Comprar" />
+        <section class="products" id="products">
+          <h2 class="h2-line">Sua seleção especial</h2>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-img"><img /></div>
+              <div class="product-info">
+                <h4 class="product-name">Nome do produto</h4>
+                <p class="product-description">
+                  Descrição do produto um pouco maior, com duas linhas ou três
+                  que explica melhor do que se trata.
+                </p>
+                <div class="product-original-price">De: R$23,99</div>
+                <div class="product-discount-price">Por: R$19,99</div>
+                <div class="product-parcel-price">ou 2x de R$9,99</div>
+                <input class="btn" type="submit" value="Comprar" />
+              </div>
             </div>
             <input
               class="btn"
@@ -115,11 +117,17 @@
             Preencha agora!
           </p>
           <form class="invite-form">
-            <label>Nome do seu amigo:</label>
-            <input type="text" class="invite-name" />
-            <label>E-mail:</label>
-            <input type="email" class="invite-email" />
-            <input class="btn" type="submit" value="Enviar agora" />
+            <div class="invite-form-fields">
+              <div class="form-group">
+                <label>Nome do seu amigo:</label>
+                <input type="text" class="invite-name" />
+              </div>
+              <div class="form-group">
+                <label>E-mail:</label>
+                <input type="email" class="invite-email" />
+              </div>
+            </div>
+            <input class="btn btn-lg" type="submit" value="Enviar agora" />
           </form>
         </section>
       </main>
