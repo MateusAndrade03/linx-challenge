@@ -1,3 +1,4 @@
+//Load Products from Api
 export const loadProducts = async (page) => {
   const response = await fetch(
     `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`,
@@ -7,6 +8,7 @@ export const loadProducts = async (page) => {
   return productsJson;
 };
 
+//create de product card
 export const generateCard = (products) => {
   const price = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -40,10 +42,27 @@ export const generateCard = (products) => {
   return product;
 };
 
+//Generate product cards
 export const generateCards = (products) => {
   const cardGrid = document.querySelector('.card-grid');
   products.forEach((item) => {
     const product = generateCard(item);
     cardGrid.innerHTML += product;
   });
+};
+
+//validade name from ivinte-form
+export const validateName = () => {
+  const invalidName = document.querySelector('.invalid-name');
+  const friendName = document.querySelector('.invite-name').value;
+  const valid = /^[A-Za-z]+([\ A-Za-z]+)*/;
+
+  console.log(valid.test(friendName));
+  if (valid.test(friendName)) {
+    console.log('valid');
+    invalidName.classList.add('hidden');
+  } else {
+    console.log('invalid');
+    invalidName.classList.remove('hidden');
+  }
 };

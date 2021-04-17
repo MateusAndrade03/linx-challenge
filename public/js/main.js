@@ -1,7 +1,8 @@
-import { loadProducts, generateCards } from './utils.js';
+import { loadProducts, generateCards, validateName } from './utils.js';
 
 let page = 1;
 const btnMoreProducts = document.querySelector('#btn-more-products');
+const formInviteFriend = document.querySelector('.invite-form');
 
 window.addEventListener('load', async () => {
   const { products } = await loadProducts(1);
@@ -15,4 +16,10 @@ btnMoreProducts.addEventListener('click', async (e) => {
   const { products } = await loadProducts(page);
 
   generateCards(products);
+});
+
+formInviteFriend.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  validateName();
 });

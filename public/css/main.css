@@ -272,6 +272,14 @@ input[type='email'] {
   max-width: 340px;
 }
 
+/* style invalid name */
+.invalid-name {
+  display: block;
+  margin-top: -18px;
+  font-size: 1.2rem;
+  color: red;
+}
+
 /* style footer */
 .main-footer {
   display: flex;
@@ -345,6 +353,10 @@ input[type='email'] {
 }
 /* icon */
 .btn-arrow {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
