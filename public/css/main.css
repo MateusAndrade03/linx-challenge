@@ -87,6 +87,30 @@ body {
   font-size: 1.4rem;
 }
 
+.main-description-form {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.main-description {
+  flex: 1.5;
+  max-width: 520px;
+  margin-right: 60px;
+  color: #888;
+}
+
+.main-description h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.main-description p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 .btn {
   display: inline-block;
   background: #ffffff;
