@@ -19,6 +19,7 @@ body {
   max-width: 1500px;
 }
 
+/* style header */
 .main-header {
   display: flex;
   position: relative;
@@ -62,6 +63,7 @@ body {
   margin-top: 30px;
 }
 
+/* style header navbar */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -85,6 +87,13 @@ body {
   text-decoration: none;
   color: #888;
   font-size: 1.4rem;
+}
+
+/* style main */
+main {
+  max-width: 920px;
+  margin: auto;
+  padding: 0 10px 0 10px;
 }
 
 .main-description-form {
@@ -111,6 +120,43 @@ body {
   line-height: 2rem;
 }
 
+.main-form {
+  flex: 1;
+  max-width: 340px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.form-group input[type='text'],
+input[type='email'] {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #707070;
+}
+
+.form-group .form-gender {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.form-group .form-gender label {
+  display: inline-block;
+}
+
+.main-form .btn {
+  display: inline-block;
+  width: 100%;
+  margin-top: 23px;
+}
+
+/* in common styles */
 .btn {
   display: inline-block;
   background: #ffffff;
@@ -121,4 +167,13 @@ body {
   padding: 10px;
   width: 160px;
   text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #888;
+}
+
+/* large buttons */
+.btn-lg {
+  width: 360px;
+  height: 40px;
 }
