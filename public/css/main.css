@@ -61,3 +61,40 @@ body {
   font-size: 1.6rem;
   margin-top: 30px;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 15px 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.4rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+}
