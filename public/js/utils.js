@@ -8,7 +8,7 @@ export const loadProducts = async (page) => {
   return productsJson;
 };
 
-//create de product card
+//create the product card
 export const generateCard = (products) => {
   const price = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -51,7 +51,7 @@ export const generateCards = (products) => {
   });
 };
 
-//validade name from ivinte-form
+//validate name from ivinte-form
 export const validateName = () => {
   const invalidName = document.querySelector('.invalid-name');
   const friendName = document.querySelector('.invite-name').value;
