@@ -3,6 +3,7 @@
 Linx challenge é uma *landing page* criada a partir do  **Desafio | Frontend Developer**. Como teste para a vaga de **Frontend Developer** para o time de **Customer Operations** da Linx Impulse.
 
 O projeto consiste em três telas com grades de produtos e duas delas com formulários de *newsletter*. Onde o maior desafio compreendia em transformar os *layouts* em páginas funcionais.
+
 [Link para o projeto no Heroku](https://linx-challenge-mateus-andrade.herokuapp.com/)
 
 Uma das telas requeridas era um *template* para *email*.
